@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
-
     private static QuestManager instance;
 
     public QuestManager Instance
@@ -23,6 +22,4 @@ public class QuestManager : MonoBehaviour
             }
         }
     }
-
-
 }
