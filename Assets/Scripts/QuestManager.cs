@@ -8,8 +8,7 @@ public class QuestManager : MonoBehaviour
 
     public QuestManager Instance
     {
-        get { return instance; }
-        set
+        get
         {
             if (instance == null)
             {
@@ -20,6 +19,24 @@ public class QuestManager : MonoBehaviour
                     QuestManager.AddComponent<QuestManager>();
                 }
             }
+            return instance;
         }
+
+
+    }
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+
     }
 }
