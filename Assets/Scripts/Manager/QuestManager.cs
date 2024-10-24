@@ -21,8 +21,6 @@ public class QuestManager : MonoBehaviour
             }
             return instance;
         }
-
-
     }
 
     private void Awake()
@@ -36,7 +34,5 @@ public class QuestManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-
     }
 }
