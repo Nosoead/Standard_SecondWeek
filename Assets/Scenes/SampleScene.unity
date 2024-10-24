@@ -732,6 +732,9 @@ MonoBehaviour:
   - tag: Circle
     prefab: {fileID: 2303350292412730263, guid: db94496fb14f97f4e9217fb7228c8c67, type: 3}
     poolSize: 20
+  - tag: Square
+    prefab: {fileID: 2413903967106170973, guid: 2af274951c692414cadc1ffe04a2f364, type: 3}
+    poolSize: 20
 --- !u!1 &1493658186
 GameObject:
   m_ObjectHideFlags: 0
