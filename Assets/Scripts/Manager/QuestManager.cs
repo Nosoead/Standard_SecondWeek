@@ -6,6 +6,8 @@ public class QuestManager : MonoBehaviour
 {
     private static QuestManager instance;
 
+    public List<QuestDataSO> questDataSO;
+
     public QuestManager Instance
     {
         get
@@ -35,4 +37,6 @@ public class QuestManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+
 }
