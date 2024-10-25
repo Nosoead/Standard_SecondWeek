@@ -8,7 +8,7 @@ public class QuestManager : MonoBehaviour
 
     public List<QuestDataSO> questDataSO;
 
-    public QuestManager Instance
+    public static QuestManager Instance
     {
         get
         {
@@ -17,7 +17,7 @@ public class QuestManager : MonoBehaviour
                 instance = FindObjectOfType<QuestManager>();
                 if (instance == null)
                 {
-                    GameObject QuestManager = new GameObject();
+                    GameObject QuestManager = new GameObject("QuestManager");
                     QuestManager.AddComponent<QuestManager>();
                 }
             }

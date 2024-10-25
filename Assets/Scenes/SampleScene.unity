@@ -206,10 +206,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1479356164}
-        m_TargetAssemblyTypeName: ObjectPool, Assembly-CSharp
+      - m_Target: {fileID: 211283248}
+        m_TargetAssemblyTypeName: PracticeToListObjectPool, Assembly-CSharp
         m_MethodName: TestRelease
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -265,7 +265,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 211283246}
-  - component: {fileID: 211283245}
+  - component: {fileID: 211283247}
+  - component: {fileID: 211283248}
   m_Layer: 0
   m_Name: QuestManager
   m_TagString: Untagged
@@ -273,21 +274,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &211283245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 211283244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de479b8cbb328d2458b55076fbf23e59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questDataSO:
-  - {fileID: 11400000, guid: 2319a246239455642ab3473a2858d614, type: 2}
-  - {fileID: 11400000, guid: 87c83500cfd7e4f49a161230ab8ae70e, type: 2}
 --- !u!4 &211283246
 Transform:
   m_ObjectHideFlags: 0
@@ -303,6 +289,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &211283247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211283244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e74ce063d0d69049b242d9fa57687b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &211283248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211283244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a670117ac3c7819439962030757558a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2303350292412730263, guid: db94496fb14f97f4e9217fb7228c8c67, type: 3}
+  poolSize: 300
 --- !u!1 &316375477
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,10 +877,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1479356164}
-        m_TargetAssemblyTypeName: ObjectPool, Assembly-CSharp
+      - m_Target: {fileID: 211283248}
+        m_TargetAssemblyTypeName: PracticeToListObjectPool, Assembly-CSharp
         m_MethodName: TestGet
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
